@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+}
+.container {
+  background-color: antiquewhite;
+  -webkit-box-shadow: 1px 3px 18px 0px rgba(139, 140, 130, 1);
+  -moz-box-shadow: 1px 3px 18px 0px rgba(139, 140, 130, 1);
+  box-shadow: 1px 3px 18px 0px rgba(139, 140, 130, 1);
+  border-radius: 2rem;
+}
+
+.searchBar {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.searchBar input {
+  width: 350px;
+  outline: none;
+  height: 2rem;
+  padding: 1.1rem;
+  border-radius: 2rem 0 0 2rem;
+  border: 1.7px solid #0f0e0e;
+  font-size: 18px;
+}
+
+.searchBar button {
+  border: none;
+  font-size: 22px;
+  border-radius: 0 2rem 2rem 0;
+  width: 60px;
+  height: 38px;
+  color: aliceblue;
+  background-color: orangered;
+}
+
+.category {
+  width: 600px;
+  height: 200px;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.category .dishes {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  gap: 27px;
+  justify-content: center;
+  margin: auto;
+  transition: all 1.2s ease-in-out;
+}
+
+.dishes input {
+  width: 100px;
+  height: 30px;
+  background-color: rgb(32, 155, 225);
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.dishes input:hover {
+  background-color: rgb(231, 80, 30);
+  color: #0f0e0e;
+}
+.category button {
+  position: relative;
+  top: 33px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#nextBtn {
+  margin-left: 93%;
+}
+#prevBtn {
+  padding: -8px;
+  cursor: pointer;
+}
+
+.showReci {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 300px !important;
+}
+
+.showReci .card {
+  text-align: center;
+  width: 380px;
+
+  background-color: aliceblue;
+  margin-inline: 20px;
+  margin-bottom: 5rem;
+  border-radius: 0.6rem;
+  border: 1px solid black;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showReci .card p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: left; /* Adjust text alignment */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .showReci .card p::before {
+    content: "\2022"; /* Add a solid disc bullet point before each line */
+    color: orangered; /* Set the bullet point color */
+    display: inline-block;
+    width: 1em; /* Adjust spacing between the bullet point and text */
+    margin-right: 0.5em; /* Adjust spacing between the bullet point and text */
+  }
+  
+
+.card img {
+  width: 100%;
+}
+
+.card button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 120px;
+  height: 30px;
+  border-radius: 1rem;
+  background-color: orangered;
+  color: white;
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 30px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .searchBar input {
+    width: 80%;
+  }
+
+  .searchBar button {
+    width: 18%;
+  }
+
+  .category {
+    width: 90%;
+  }
+
+  .dishes input {
+    width: 80px;
+  }
+
+  .card {
+    width: 90%;
+  }
+  #nextBtn {
+    margin-left: 80%; /* Adjust the margin for small screens */
+  }
+
+  #prevBtn {
+    padding: -5px; /* Adjust the padding for small screens */
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .searchBar input {
+    width: 60%;
+  }
+
+  .searchBar button {
+    width: 15%;
+  }
+
+  .category {
+    width: 70%;
+  }
+
+  .dishes input {
+    width: 90px;
+  }
+
+  .card {
+    width: 70%;
+  }
+  #nextBtn {
+    margin-left: 85%; /* Adjust the margin for medium screens */
+  }
+
+  #prevBtn {
+    padding: -6px; /* Adjust the padding for medium screens */
+  }
+}
